@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>竞彩足球赔率与盘口分析 · 周四 261022</title>
+<title>竞彩足球赔率与盘口分析 · 周五 261023</title>
 <style>
 :root{
   --bg:#f4f6f3;
@@ -184,15 +184,6 @@ h3.block .hint{font-weight:500;font-size:12.5px;color:var(--muted)}
 }
 .m-concl .detail b{color:var(--accent2)}
 
-/* tags */
-.tag{
-  display:inline-block;font-size:11.5px;font-weight:700;line-height:1.6;
-  padding:2px 9px;border-radius:999px;white-space:nowrap;border:1px solid transparent;
-}
-.t-ok{color:#0b6b46;background:#e4f2ea;border-color:#c6e3d4}
-.t-watch{color:#8a5209;background:#fdf2e2;border-color:#f0dcbb}
-.t-risk{color:#a01f18;background:#fdeceb;border-color:#f4cfcc}
-
 /* probability bar */
 .bar{
   display:inline-block;width:110px;height:5px;border-radius:3px;background:#e9eeea;
@@ -215,10 +206,6 @@ h3.block .hint{font-weight:500;font-size:12.5px;color:var(--muted)}
 .kcard li:last-child{margin-bottom:0}
 .kcard b{color:var(--accent2)}
 .kcard em{font-style:normal;color:var(--accent);font-weight:700}
-
-/* legend */
-.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:0 0 16px}
-.legend .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
 
 footer{
   max-width:1280px;margin:0 auto;padding:26px 24px 60px;
@@ -260,15 +247,13 @@ footer .sources a{word-break:break-all}
   .note{margin:10px 0 14px;font-size:12.5px;padding:9px 12px}
   h3.block{font-size:14px;margin:22px 0 10px}
   h3.block .hint{display:none}
-  .legend{gap:10px;font-size:11.5px}
 
   /* 单场卡片：窄屏改为单列 */
   .match{padding:13px 13px;border-radius:12px;margin-bottom:11px}
   .m-head{gap:8px;padding-bottom:9px}
   .m-title{font-size:15px;flex:1 1 100%;order:3}
   .m-no{order:1}
-  .m-head .tag{order:2;margin-left:auto}
-  .m-time{order:4;margin-left:0;flex:1 1 100%}
+  .m-time{order:2;margin-left:auto}
   .m-grid{grid-template-columns:1fr}
   .m-grid>div.wide{grid-column:auto}
   .m-grid dt{flex:0 0 108px;font-size:11px}
@@ -292,7 +277,7 @@ footer .sources a{word-break:break-all}
 
 <div class="topbar">
   <div class="inner">
-    <div class="brand">竞彩足球赔率与盘口分析<small>UEFA RANKING · HANDICAP TIERS · POISSON MODEL</small></div>
+    <div class="brand">竞彩足球赔率与盘口分析<small>ASIAN HANDICAP · ODDS MOVES · POISSON MODEL</small></div>
     <nav>
       <a href="#overview">概览</a>
       <a href="#matches">单场数据</a>
@@ -305,99 +290,89 @@ footer .sources a{word-break:break-all}
 
 <header class="cover" id="overview">
   <div class="eyebrow">享受比赛 · 理性分析</div>
-  <h1>竞彩足球赔率与盘口分析<br><em> 周四 261022</em></h1>
+  <h1>竞彩足球赔率与盘口分析<br><em> 周五 261023</em></h1>
   <p class="lede">
-    周四欧罗巴联赛专场（10 场）+ 解放者杯（1 场）。按「欧足联 5 年俱乐部排名 → 排名差换算合理挡位 → 对照亚盘初盘/即时盘」的方法逐场评估盘口合理性，
-    同时给出竞彩官方赔率、赔率隐含概率（去水）与泊松分布模型概率，全部整合在单场区块中。
+    周五联赛回归日，12 场分属澳超、德乙、瑞超、荷甲、荷乙、德甲、意甲、法甲、英超、英冠、西甲、葡超 12 个联赛。
+    按「竞彩官方赔率 + 亚盘初盘/即时盘走势 + 泊松分布模型」逐场整理：胜平负、让球胜平负、支持率、欧洲平均赔率、隐含概率（去水）与最可能比分，全部整合在单场区块中。
   </p>
   <div class="meta-strip">
     <span>赔率来源：中国竞彩官网 lottery.gov.cn</span>
-    <span>奖金更新 2026-10-21 21:49:50</span>
-    <span>排名口径：UEFA 5 年俱乐部排名（kassiesa）</span>
+    <span>赔率采集：2026-10-22</span>
     <span>亚盘来源：足彩网 99 家平均</span>
+    <span>模型：泊松分布（λ 拟合去水概率）</span>
   </div>
 
   <div class="stat-grid">
     <div class="stat">
       <div class="k">比赛总场次</div>
-      <div class="v">11</div>
-      <div class="s">周四 261022 · 欧罗巴 10 · 解放者杯 1</div>
+      <div class="v">12</div>
+      <div class="s">周五 261023 · 12 个联赛各 1 场</div>
     </div>
     <div class="stat">
-      <div class="k">盘口判定分布</div>
-      <div class="v acc">5 · 4 · 2</div>
-      <div class="s">合理 5 · 偏浅 4 · 与排名背离 2</div>
+      <div class="k">亚盘走势分布</div>
+      <div class="v acc">3 · 5 · 4</div>
+      <div class="s">主队方向升盘 3 · 走弱 5 · 维持 4</div>
     </div>
     <div class="stat">
       <div class="k">最高进球期望</div>
-      <div class="v">3.55</div>
-      <div class="s">005 OFI克里特 vs 勒沃库森（球）</div>
+      <div class="v">3.66</div>
+      <div class="s">006 斯图加特 vs 门兴（球）</div>
     </div>
     <div class="stat">
       <div class="k">最低大 2.5 球</div>
-      <div class="v">41.2%</div>
-      <div class="s">013 弗拉门戈 vs 拉普大学</div>
+      <div class="v">40.9%</div>
+      <div class="s">011 阿拉维斯 vs 马拉加</div>
     </div>
   </div>
 </header>
 
 <section class="day" id="matches">
   <div class="day-head">
-    <h2>单场数据 · 周四 2026-10-22</h2>
-    <div class="sub">编号日期 261022 · 11 场 · 北京时间 10-23 00:45 起，跨至 10-23 08:30</div>
-    <div class="pill">11 场</div>
+    <h2>单场数据 · 周五 2026-10-23</h2>
+    <div class="sub">编号日期 261023 · 12 场 · 北京时间 10-23 17:00 起，跨至 10-24 03:45</div>
+    <div class="pill">12 场</div>
   </div>
 
   <div class="note">
-    <b>口径说明：</b>括号内为 <b>UEFA 5 年俱乐部排名</b>（拜仁1 / 皇马2 / 巴黎3 ……，无 = 近 5 年几乎无欧战积分）。
-    <b>竞彩让球数为让球胜平负玩法</b>：「−1」= 主让 1 球，让球胜 = 主队净胜 2 球以上、让球平 = 恰好净胜 1 球、让球负 = 未净胜 2 球；
-    「+1」= 客让 1 球（主受让），让球胜 = 主队不败、让球平 = 主队恰好输 1 球、让球负 = 主队输 2 球以上。「−2 / +2」依此类推。
-    亚洲盘为 99 家平均「初盘 → 即时盘」。<b>005 竞彩胜平负未开售</b>，概率改用欧洲平均赔率计算。
-    <b>要点栏依据两队近况、交锋与伤停信息撰写</b>（足彩网比分预测频道 + FotMob / 懂球帝等公开报道），不与排名挡位挂钩。
-  </div>
-
-  <div class="legend">
-    <span><i class="dot" style="background:#0d7a4f"></i>合理（盘口与排名挡位匹配）</span>
-    <span><i class="dot" style="background:#a8620b"></i>偏浅（排名差大但让球不足）</span>
-    <span><i class="dot" style="background:#b3261e"></i>与排名背离（盘口方向反排名）</span>
+    <b>口径说明：</b><b>竞彩让球数为让球胜平负玩法</b>：「−1」= 主让 1 球，让球胜 = 主队净胜 2 球以上、让球平 = 恰好净胜 1 球、让球负 = 未净胜 2 球；
+    「+1」= 客让 1 球（主受让），让球胜 = 主队不败、让球平 = 主队恰好输 1 球、让球负 = 主队输 2 球以上。
+    亚洲盘为足彩网 99 家平均「初盘 → 即时盘」。
+    <b>要点栏依据两队排名、近况与交锋信息撰写</b>（足彩网比分预测频道）；002 / 004 / 006 / 009 / 010 五场近况数据未能获取，已如实标注，相关内容以盘面数据为主。
   </div>
 
   <!-- 001 -->
   <article class="match">
     <div class="m-head">
       <span class="m-no">001</span>
-      <h4 class="m-title">格风暴(79) vs 马赛(48)</h4>
-      <span class="tag t-ok">合理</span>
-      <span class="m-time">10-23 00:45</span>
+      <h4 class="m-title">布里斯班狮吼 vs 珀斯光荣（澳超）</h4>
+      <span class="m-time">10-23 17:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">3.30 / 3.65 / 1.81</dd></div>
-        <div><dt>让球盘 +1</dt><dd class="mono">1.78 / 3.65 / 3.40</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 0.87/0.90 → 受半球 0.87/0.95</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">16 / 10 / 74</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.60/3.40/2.70 → 3.43/3.59/2.02</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">26.8 / 24.3 / 48.9</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">26.9 / 24.3 / 48.8</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 11.5% · 0:1 9.8% · 1:2 9.5% · 0:2 8.1% · 1:0 6.9%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">53.8%<span class="bar mid"><i style="width:53.8%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">1.97 / 3.25 / 3.20</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">4.10 / 3.60 / 1.65</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 0.58/1.47 → 平/半 0.88/0.97</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">54 / 24 / 22</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.05/3.50/3.20 → 2.09/3.46/3.21</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">45.0 / 27.3 / 27.7</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">45.1 / 27.4 / 27.6</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.8% · 1:0 12.8% · 0:1 9.4% · 0:0 9.4% · 2:1 8.7%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">42.0%<span class="bar low"><i style="width:42%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：马赛 2 档，格风暴 3-4 档。马赛法甲老牌欧战队，格风暴奥甲代表。</dd></div>
-        <div><dt>排名差</dt><dd>79 − 48 = 31，客队高约 4-5 档，客场作战合理挡位是 0.5 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘平手，目前升至受半球（马赛让 0.5），欧均客胜从 2.70 一路压到 2.02——升盘方向与排名差一致，到位了！</dd></div>
+        <div><dt>走势解读</dt><dd>平均盘口从平手（主水 0.58 超低水）升到主让平/半（0.88/0.97），主流公司基本站稳平/半——升盘对主队方向有利；但欧均主胜 2.05→2.09 反而微升，亚盘与欧赔节奏不完全同步。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">格风暴上轮奥甲 6:1 血洗格拉茨AK 止住颓势，欧联主场曾 0:0 闷平雷恩；马赛法甲仅第 9、近 8 场 3 胜 5 负无平局，刚客场 5:2 大胜昂热回暖，但欧联客场 1:4 惨败贝西克塔、主场 0:1 输奥林匹亚，客场防线漏洞大。两队近期都多分胜负，本场平局预期低</p>
-      <p class="detail">亚盘升盘后合理。注意竞彩 <b>+1 = 马赛让 1 球，比亚盘还深一档</b>：让球胜 3.40 需要马赛净胜 2 球，模型给客胜 2 球以上仅约 19%，<b>让球胜 1.78（主队不败）与让球平 3.65（恰好输 1 球）更符合盘面</b>。</p>
+      <p class="pt">澳超第 2 轮，布里斯班首轮轮空暂未出战（上季第 11），珀斯首轮 1:2 告负（上季第 10）。交锋很值得注意：近 10 次交手布里斯班仅 4 胜 1 平 5 负还处下风，上季收官战就 1:2 输给珀斯；但两队碰面大球率极高，近 10 次交锋 7 场总进球 ≥ 3</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘平/半深两档</b>：让球胜 4.10 需净胜 2 球，模型仅给 21.3%；<b>让球负 1.65（珀斯不输 2 球）模型覆盖 54.9%，是盘面最稳方向</b>。模型大 2.5 球仅 42.0%，与两队交锋的大球传统相悖——若按交锋节奏走，让球平 3.60（主恰好赢 1 球）23.8% 可作防范。</p>
     </div>
   </article>
 
@@ -405,38 +380,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">002</span>
-      <h4 class="m-title">波兹南(81) vs 桑德兰(无)</h4>
-      <span class="tag t-ok">合理</span>
-      <span class="m-time">10-23 00:45</span>
+      <h4 class="m-title">波鸿 vs 沃尔夫斯堡（德乙）</h4>
+      <span class="m-time">10-24 00:30</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">4.50 / 3.70 / 1.57</dd></div>
-        <div><dt>让球盘 +1</dt><dd class="mono">2.10 / 3.30 / 2.86</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">约 受半球 → 受半/一（欧赔换算）</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">11 / 7 / 82</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">4.00/3.60/1.91 → 4.54/3.90/1.70</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">19.7 / 23.9 / 56.4</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">19.7 / 23.8 / 56.5</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">0:1 12.6% · 1:1 11.3% · 0:2 10.8% · 1:2 9.7% · 0:0 7.4%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">48.4%<span class="bar low2"><i style="width:48.4%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">2.70 / 3.65 / 2.06</dd></div>
+        <div><dt>让球盘 +1</dt><dd class="mono">1.58 / 4.05 / 4.00</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 1.01/0.75 → 受平/半 0.96/0.86</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">9 / 11 / 80</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.65/3.70/2.29 → 3.01/3.77/2.08</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">32.8 / 24.3 / 43.0</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">32.6 / 24.3 / 43.1</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 11.3% · 1:2 9.0% · 0:1 8.3% · 2:1 7.7% · 1:0 7.0%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">56.8%<span class="bar"><i style="width:56.8%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>桑德兰是欧战新兵（英超升班后首次参赛，无 5 年积分），但英超平台加成大；波兹南波兰甲冠军班底，排名 81。</dd></div>
-        <div><dt>排名差</dt><dd>无排名 vs 81，表面无差，但英超球队身价与强度摆在那，客场让 0.5-0.75 是市场共识。</dd></div>
-        <div><dt>盘口走势</dt><dd>欧均客胜 1.91 → 1.70 持续压低，换算亚盘从客让半球升到半/一，走势一边倒向客队。</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘从平手升到主受让平/半（沃尔夫斯堡客让 0.25）；欧均客胜 2.29→2.08 大幅压低、主胜 2.65→3.01 升高——盘口与赔率一致倒向客队。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">波兹南波兰甲第 2、刚 6:1 大胜科罗纳，但欧联两场 0:4 先后被勒沃库森和水晶宫打穿，内战内行外战外行；桑德兰英超垫底（7 轮 4 分）、近 5 轮 1 平 4 负，却在欧联两连胜——桑德兰对欧联的投入度，就是市场一路升盘的底气</p>
-      <p class="detail">盘口走势合理。竞彩 <b>+1 = 桑德兰让 1 球</b>：让球胜 2.86 需净胜 2 球，模型给客队净胜 2 球以上约 25%，性价比一般；<b>让球平 3.30（主队恰好输 1 球）是本场概率最高的让球选项</b>。</p>
+      <p class="pt">本场两队近况与交锋数据缺失（数据源页面未有效返回），仅按盘面解读：亚盘从平手升到主受让平/半，欧均客胜大幅压低，支持率 80% 压客胜——盘口、赔率、资金三线一致倒向沃尔夫斯堡，波鸿主场完全不被信任</p>
+      <p class="detail">竞彩 <b>+1 = 客让 1 球，比亚盘（客让 0.25）深两档</b>：让球胜 1.58（波鸿不败）模型覆盖 56.8%，是三项中概率最高的方向但赔率偏低；<b>让球平 4.05（波鸿恰好输 1 球）21.2% 可作防范</b>。客胜 2.06 与欧均 2.08 基本一致，无额外价值。</p>
     </div>
   </article>
 
@@ -444,38 +416,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">003</span>
-      <h4 class="m-title">萨迪纳摩(56) vs 奈梅亨(无)</h4>
-      <span class="tag t-watch">主队盘口偏浅</span>
-      <span class="m-time">10-23 00:45</span>
+      <h4 class="m-title">埃夫斯堡 vs 马尔默（瑞超）</h4>
+      <span class="m-time">10-24 01:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">1.42 / 4.22 / 5.30</dd></div>
-        <div><dt>让球盘 −1</dt><dd class="mono">2.33 / 3.50 / 2.42</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">半/一 0.96/0.81 → 一球 0.97/0.88</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">78 / 9 / 13</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.80/3.75/4.50 → 1.62/4.19/4.74</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">62.3 / 21.0 / 16.7</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">62.3 / 21.0 / 16.7</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:0 10.8% · 2:0 10.8% · 1:1 10.0% · 2:1 9.9% · 3:0 7.2%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">55.6%<span class="bar"><i style="width:55.6%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">1.90 / 3.50 / 3.15</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">3.80 / 3.65 / 1.69</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 0.68/1.10 → 平/半 0.80/0.99</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">65 / 17 / 18</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.29/3.33/2.89 → 2.04/3.51/3.23</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">46.6 / 25.3 / 28.1</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">46.5 / 25.3 / 28.1</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.0% · 1:0 10.6% · 2:1 9.3% · 2:0 8.1% · 0:1 7.8%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">50.1%<span class="bar mid"><i style="width:50.1%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：萨迪纳摩 2 档，奈梅亨 4 档。奈梅亨荷甲队，多年无欧战积分（排名 200+）。</dd></div>
-        <div><dt>排名差</dt><dd>56 vs 200+，差约 150 名，主场作战合理挡位在 1.5-2 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘才半/一（0.75），目前升到一球。升是升了，但对比 150 名的差距，还是太少了，不合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘从平手（主水 0.68 低水）升到主让平/半（0.80/0.99）；欧均主胜 2.29→2.04 持续压低——升盘 + 降水，主队方向明确走强。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">萨迪纳摩联赛刚 5:1 大胜，欧联 1 胜 1 平且两场零封，主场火力稳定；奈梅亨荷甲 8 场不胜（5 平 3 负），欧联客场刚 0:5 输尤文，客场虫属性明显，2008 年欧联交手萨迪纳摩主场 3:2 赢过。盘口只让一球，顾虑的是奈梅亨的平局属性</p>
-      <p class="detail">按排名挡位盘口明显偏浅，市场顾虑的应该是奈梅亨的荷甲强度。竞彩 <b>−1 = 主让 1 球，与即时亚盘一球一致</b>：让球胜 2.33 需净胜 2 球，模型给主队净胜 2 球以上约 38%，<b>让球胜/让球负两边都有支撑，倾向让球胜 2.33 小博</b>。</p>
+      <p class="pt">瑞超第 25 轮：埃夫斯堡排第 5（11 胜 8 平 5 负 41 分），马尔默第 7（11 胜 3 平 10 负 36 分），相差 5 分。风格对比鲜明——马尔默 24 轮仅 3 场平局，是联赛最典型的分胜负球队；埃夫斯堡则有 8 场平局。盘口从平手升主让平/半，欧均主胜持续压低，对排名更高的主队有利</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘深两档</b>：让球胜 3.80 需净胜 2 球，模型仅 23.5%；<b>马尔默多分胜负属性下，让球负 1.69（客队不输 2 球）覆盖 53.5% 是稳方向</b>；让球平 3.65（主恰好赢 1 球）23.0% 可作补充。</p>
     </div>
   </article>
 
@@ -483,38 +452,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">004</span>
-      <h4 class="m-title">尤文图斯(25) vs 雷恩(66)</h4>
-      <span class="tag t-ok">合理</span>
-      <span class="m-time">10-23 00:45</span>
+      <h4 class="m-title">前进之鹰 vs 特尔斯达（荷甲）</h4>
+      <span class="m-time">10-24 02:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">1.42 / 4.15 / 5.45</dd></div>
-        <div><dt>让球盘 −1</dt><dd class="mono">2.42 / 3.30 / 2.42</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">一球 0.98/0.79 → 一球 0.85/0.99</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">87 / 6 / 7</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.60/4.20/5.40 → 1.53/4.30/5.58</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">62.4 / 21.3 / 16.3</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">62.4 / 21.3 / 16.3</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:0 11.5% · 2:0 11.2% · 1:1 10.1% · 2:1 9.9% · 3:0 7.3%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">53.8%<span class="bar mid"><i style="width:53.8%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">1.39 / 4.38 / 5.50</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">2.18 / 3.75 / 2.48</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">一球 0.82/0.93 → 一球 0.94/0.87</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">77 / 10 / 13</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.51/4.37/5.25 → 1.58/4.27/4.78</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">63.7 / 20.2 / 16.1</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">63.7 / 20.2 / 16.1</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">2:0 10.6% · 1:0 10.2% · 2:1 9.9% · 1:1 9.5% · 3:0 7.3%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">58.1%<span class="bar"><i style="width:58.1%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：尤文 1 档，雷恩 3 档。尤文联赛阶段目前排名第 1（竞彩标注）。</dd></div>
-        <div><dt>排名差</dt><dd>66 − 25 = 41，主场作战合理挡位是 1 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘一球，目前维持一球，主水从 0.98 降到 0.85——盘口不升不降，水位走强，合理！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘一球维持（主水 0.82→0.94 升高）；欧均主胜 1.51→1.58 微升、平赔 4.37→4.27 下压——一球盘没有动摇，但主胜热度略降、平局受关注。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">尤文欧联两连胜进 7 球 0 失球排小组第 1，但联赛刚 0:3 输拉齐奥，且伤停严重——伊尔迪兹、图拉姆、洛卡特利、孔塞桑等 7 人缺阵；雷恩法甲客场两连败（0:4 里昂、0:1 拉瓦尔），欧联 1 胜 1 平。残阵尤文让一球，赢面有，但打穿比盘口显示的要费劲</p>
-      <p class="detail">本期最标准的场次之一。竞彩 <b>−1 = 主让 1 球，与亚盘一致</b>：让球胜 2.42 需净胜 2 球，模型给约 37%；让球平 3.30（恰好赢 1 球）约 25%，1:0 和 2:0 两个比分合计 22.7%——<b>让球胜平两端均衡，让球平 3.30 略有价值</b>。</p>
+      <p class="pt">本场两队近况与交锋数据缺失（数据源页面仅返回赔率方差）。盘面：亚盘一球维持但主水明显升高，欧均主胜微升、平赔下压，主胜热度略降；支持率 77% 仍集中在主胜，一球盘暂时站稳</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，与亚盘一球对齐</b>：让球胜 2.18 需净胜 2 球，模型给 39.8%（2:0 单比分就占 10.6%），三项中概率赔率比最优；让球负 2.48（特尔斯达不输 2 球）36.3%。<b>大 2.5 球 58.1% 偏高，2:0 / 1:0 是主线比分</b>。</p>
     </div>
   </article>
 
@@ -522,38 +488,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">005</span>
-      <h4 class="m-title">OFI克里特(无) vs 勒沃库森(9)</h4>
-      <span class="tag t-watch">客队盘口偏浅</span>
-      <span class="m-time">10-23 00:45</span>
+      <h4 class="m-title">布雷达 vs 赫拉克勒斯（荷乙）</h4>
+      <span class="m-time">10-24 02:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">未开售（欧均 10.79 / 6.70 / 1.21）</dd></div>
-        <div><dt>让球盘 +2</dt><dd class="mono">2.36 / 4.05 / 2.18</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">受球半 0.86/0.91 → 受两球 0.89/0.94</dd></div>
-        <div><dt>支持率（让球盘）</dt><dd class="mono">18 / 20 / 62</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">8.10/5.10/1.35 → 10.79/6.70/1.21</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">8.7 / 14.0 / 77.4</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">8.6 / 13.9 / 77.4</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">0:2 10.7% · 0:3 9.7% · 1:2 8.8% · 1:3 8.0% · 0:1 7.8%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">68.8%<span class="bar mid"><i style="width:68.8%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">2.30 / 3.60 / 2.40</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">4.60 / 4.25 / 1.48</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平/半 0.96/0.80 → 平/半 0.96/0.83</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">25 / 23 / 52</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.28/3.45/2.80 → 2.23/3.72/2.63</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">38.5 / 24.6 / 36.9</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">38.6 / 24.7 / 36.8</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 11.5% · 2:1 8.5% · 1:2 8.3% · 1:0 8.0% · 0:1 7.8%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">55.9%<span class="bar"><i style="width:55.9%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：勒沃库森 1 档，OFI 克里特 4 档。克里特是希腊超中游队，无 5 年欧战积分（排名 300 开外）。</dd></div>
-        <div><dt>排名差</dt><dd>300+ vs 9，差接近 300 名，客场作战合理挡位在 2.5 球以上。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘受球半（客让 1.5），目前升到受两球（客让 2）。方向在升，但对比差距还是太少了，不合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘主让平/半维持不动（0.96/0.80 → 0.96/0.83）；欧均客胜 2.80→2.63 明显压低、主胜 2.28→2.23 微降——盘口不动，赔率两头走，52% 支持率在客胜。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">勒沃库森欧联两连胜进 6 失 0，但本场残阵远征希腊：泰里耶、科法内、盖拉-杜埃、本-萨吉尔等 5 人伤缺，霍夫曼临时补报进名单；OFI 各项 3 连败丢 9 球，可主场刚 2:0 赢过霍芬海姆，希腊主场不好踢。亚盘升到两球就升不动，残阵 + 远征是关键变量</p>
-      <p class="detail">竞彩 <b>+2 = 勒沃库森让 2 球，与即时亚盘两球对齐</b>：让球负 2.18（克里特输 3 球以上）模型给约 30%，让球胜 2.36（主队输 1 球以内或不败）约 44%——<b>排名虽悬殊，但勒沃库森客场 + 轮换因素压低了盘口，让球胜 2.36 反而更稳</b>。</p>
+      <p class="pt">荷乙第 12 轮，两队都是上季荷甲降级队（布雷达 17、赫拉克勒斯 18），降入荷乙后走势分化：赫拉克勒斯 9 胜 1 平 1 负 28 分强势领跑，布雷达 6 胜 2 平 3 负 20 分排第 5。领头羊客场受让，盘口不动但欧赔客胜明显压低、资金往客队走</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘深两档</b>：让球胜 4.60 需布雷达净胜 2 球，模型仅 18.4% 可排除；<b>让球负 1.48（赫拉克勒斯不输 2 球）覆盖 61.4%，与客队领头羊基本面 + 资金支持方向一致，是本场核心方向</b>。</p>
     </div>
   </article>
 
@@ -561,38 +524,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">006</span>
-      <h4 class="m-title">伯恩茅斯(无) vs AC米兰(30)</h4>
-      <span class="tag t-risk">与排名背离</span>
-      <span class="m-time">10-23 03:00</span>
+      <h4 class="m-title">斯图加特 vs 门兴（德甲）</h4>
+      <span class="m-time">10-24 02:30</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">1.80 / 3.55 / 3.42</dd></div>
-        <div><dt>让球盘 −1</dt><dd class="mono">3.48 / 3.50 / 1.80</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">平/半 0.94/0.83 → 半球 0.96/0.88</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">38 / 16 / 46</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.20/3.70/3.10 → 1.99/3.64/3.49</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">49.2 / 24.9 / 25.9</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">49.2 / 24.9 / 25.9</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 11.8% · 1:0 10.9% · 2:1 9.5% · 2:0 8.7% · 0:1 7.4%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">50.4%<span class="bar mid"><i style="width:50.4%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">1.30 / 5.20 / 5.95</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">1.87 / 4.00 / 2.90</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">球半 1.00/0.75 → 球半 0.93/0.91</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">89 / 6 / 5</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.40/5.00/6.50 → 1.37/5.46/6.65</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">68.1 / 17.0 / 14.9</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">68.1 / 17.1 / 14.8</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">2:1 9.3% · 2:0 8.3% · 3:1 7.9% · 1:1 7.3% · 3:0 7.0%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">70.7%<span class="bar"><i style="width:70.7%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：AC米兰 1 档，伯恩茅斯 4 档（英超升班后首次欧战，无排名）。</dd></div>
-        <div><dt>排名差</dt><dd>无 vs 30，按排名怎么都该是米兰让球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘主让平/半，目前还升半球！市场完全按英超主场 + 米兰本赛季联赛阶段表现（竞彩标注米兰 16、伯恩茅斯 5）定价，跟昨天科莫那场一个路数——排名不管用！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘球半站稳（1.00/0.75 → 0.93/0.91）；欧均主胜 1.40→1.37 继续压低、平负双升——本期最深盘口，主胜预期完全一致。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">伯恩茅斯英超只排 15，但欧联两个主场 3:0 格风暴、2:1 皇家社会全胜 0 失球，主场龙成色足；麻烦的是阿劳霍、斯科特、克鲁皮伤缺，另有多人无欧联报名资格。米兰意甲赛季不败排第 4，欧联客场刚 4:0 萨尔茨堡，但上轮欧联主场 0:2 输本菲卡暴露硬仗问题——状态对状态，谁赢都不算冷门</p>
-      <p class="detail">这场不能用排名挡位套，市场逻辑是「伯恩茅斯联赛阶段第 5 + 英超主场」。竞彩 <b>−1 = 主让 1 球，比亚盘半球深一档</b>：让球胜 3.48 需净胜 2 球（模型约 22%），<b>让球负 1.80（米兰不输或仅输 1 球）覆盖约 51%，与米兰名气结合是本场最稳方向</b>。</p>
+      <p class="pt">本场两队近况与交锋数据缺失（数据源页面未有效返回）。盘面是本期最深的一场：亚盘球半站稳，欧均主胜继续压低，支持率 89% 压倒性在主胜——盘口、赔率、资金对斯图加特主场大胜的预期完全一致</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘球半浅一档</b>：让球胜 1.87（净胜 2 球以上）模型给 46.6%，是本期让球胜里覆盖率最高的一档；<b>总进球期望 3.66 全场最高、大 2.5 球 70.7%，2:1 / 2:0 / 3:1 合计 25.5%——深盘 + 大球格局，让球胜是主线</b>。</p>
     </div>
   </article>
 
@@ -600,38 +560,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">007</span>
-      <h4 class="m-title">凯尔特人(58) vs 塞尔塔(104)</h4>
-      <span class="tag t-watch">主队盘口偏浅</span>
-      <span class="m-time">10-23 03:00</span>
+      <h4 class="m-title">都灵 vs 蒙扎（意甲）</h4>
+      <span class="m-time">10-24 02:45</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">2.48 / 3.25 / 2.39</dd></div>
-        <div><dt>让球盘 +1</dt><dd class="mono">1.44 / 4.10 / 5.25</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">受平/半 0.83/0.94 → 平手 0.95/0.89</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">32 / 25 / 43</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">3.05/3.50/2.30 → 2.65/3.44/2.52</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">35.7 / 27.2 / 37.0</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">35.7 / 27.2 / 37.1</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.9% · 0:1 10.6% · 1:0 10.3% · 0:0 8.5% · 1:2 8.1%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">44.8%<span class="bar low2"><i style="width:44.8%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">1.89 / 3.35 / 3.32</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">3.80 / 3.60 / 1.70</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平/半 0.99/0.83 → 平/半 0.87/0.99</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">65 / 22 / 13</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.30/3.35/3.06 → 2.14/3.36/3.36</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">46.9 / 26.4 / 26.7</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">46.7 / 26.5 / 26.7</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.5% · 1:0 12.3% · 2:1 9.0% · 2:0 8.9% · 0:1 8.7%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">44.6%<span class="bar low2"><i style="width:44.6%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：凯尔特人 3 档，塞尔塔 3 档。塞尔塔西甲队但多年没踢欧战（排名 104）。</dd></div>
-        <div><dt>排名差</dt><dd>104 − 58 = 46，主场作战合理挡位是 0.75-1 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘主队还受让平/半（−0.25），目前退到平手——主队有 46 名排名优势却从受让开，升盘后才回到平手，还是太少了，不合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘平/半维持，但主水 0.99→0.87 明显下降；欧均主胜 2.30→2.14 压低——不升盘只降水，市场对都灵小胜的信心在走强。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">两队欧联都是两连败（凯尔特人 1:4 本菲卡、1:3 费伦茨；塞尔塔 1:2 尤文、0:1 奥莫尼亚）。凯尔特人刚联赛 7:1 血洗哈茨，但此前两负流浪者，状态大起大落；塞尔塔西甲客场 4 连平全是小比分，客场摆大巴。主队欧战防守不稳 + 客队客场龟缩，本场进球不会多</p>
-      <p class="detail">盘口对主队明显保守，市场顾虑塞尔塔的西甲强度。竞彩 <b>+1 = 塞尔塔让 1 球</b>：让球胜 1.44（主队不败）模型给约 63%，<b>是本期让球胜里覆盖率最高的选项之一</b>；让球负 5.25 需塞尔塔净胜 2 球，模型仅约 14%，可以排除。</p>
+      <p class="pt">意甲第 8 轮：都灵排第 10（3 胜 1 平 3 负 10 分），仅高出升班马蒙扎（上季意乙第 3，2 胜 1 平 4 负 7 分排 14）3 分，两队都输多赢少。盘口不升只降水，欧均主胜明显压低——市场看好都灵主场小胜，但对大胜存疑</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘深两档</b>：让球胜 3.80 需净胜 2 球（模型 22.9%）；<b>总进球期望仅 2.46、大 2.5 球 44.6% 偏小，让球平 3.60（恰好赢 1 球）23.8% 与小球格局契合</b>；让球负 1.70（蒙扎不输 2 球）覆盖 53.3% 是稳妥方向。</p>
     </div>
   </article>
 
@@ -639,38 +596,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">008</span>
-      <h4 class="m-title">贝西克塔(123) vs 水晶宫(无)</h4>
-      <span class="tag t-ok">合理</span>
-      <span class="m-time">10-23 03:00</span>
+      <h4 class="m-title">布雷斯特 vs 尼斯（法甲）</h4>
+      <span class="m-time">10-24 02:45</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">2.08 / 3.43 / 2.80</dd></div>
-        <div><dt>让球盘 −1</dt><dd class="mono">4.35 / 3.88 / 1.56</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 1.04/0.75 → 平/半 0.92/0.91</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">44 / 14 / 42</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.90/3.35/2.49 → 2.10/3.75/3.10</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">42.6 / 25.8 / 31.6</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">42.6 / 25.8 / 31.5</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.3% · 1:0 10.1% · 2:1 8.9% · 0:1 8.5% · 1:2 7.4%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">49.7%<span class="bar low2"><i style="width:49.7%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">2.10 / 3.35 / 2.82</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">4.40 / 3.85 / 1.56</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 0.64/1.48 → 平/半 0.92/0.92</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">57 / 23 / 20</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.10/3.50/3.25 → 2.22/3.47/3.07</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">42.2 / 26.4 / 31.4</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">41.9 / 26.6 / 31.5</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.6% · 1:0 10.9% · 0:1 9.1% · 2:1 8.7% · 0:0 7.9%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">46.6%<span class="bar low2"><i style="width:46.6%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>水晶宫是欧战新兵（无排名，英超平台），贝西克塔土超主场龙但排名只有 123。两队纸面接近。</dd></div>
-        <div><dt>排名差</dt><dd>无法直接换算，主场作战合理挡位约 0-0.25 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘平手（主水 1.04 偏高），目前升到主让平/半——升盘表达对主队信心增强，幅度不大，暂时看是合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘从平手（主水 0.64 超低水）升到主让平/半（0.92/0.92）；但欧均反着走：主胜 2.10→2.22 升高、客胜 3.25→3.07 压低——亚盘升盘、欧赔走弱，两个市场方向分歧。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">贝西克塔斯欧联两连胜进 7 球（4:1 马赛、3:2 霍芬海姆），主场火力猛，但联赛刚 0:2 输特拉布宗；水晶宫英超刚 0:5 惨败布莱顿，欧联客场 2:3 输里昂，客场防线连续崩盘。两队都能进也能丢，贝西克塔主场升盘有近况支撑</p>
-      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘深两档</b>：让球胜 4.35 需净胜 2 球，模型仅约 18%，<b>让球负 1.56（水晶宫不输 2 球）覆盖约 58%，是合理方向</b>；胜平负端主胜 2.08 与欧均 2.10 一致，无额外价值。</p>
+      <p class="pt">法甲第 8 轮：布雷斯特排第 10（2 胜 3 平 2 负 9 分），尼斯第 13（2 胜 2 平 3 负 8 分），只差 1 分的同级对话。亚盘升主让平/半，欧赔却主胜升高、客胜压低——盘面背离信号明显，这种分歧场次要警惕</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，比亚盘深两档</b>：让球胜 4.40 需净胜 2 球，模型仅 19.7% 可排除；<b>让球负 1.56（尼斯不输 2 球）覆盖 58.1%，与欧赔客胜压低的方向一致——盘面分歧之下，让球负是更稳的一侧</b>。</p>
     </div>
   </article>
 
@@ -678,38 +632,35 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">009</span>
-      <h4 class="m-title">霍芬海姆(无) vs 里昂(31)</h4>
-      <span class="tag t-risk">与排名背离</span>
-      <span class="m-time">10-23 03:00</span>
+      <h4 class="m-title">伊普斯维奇 vs 诺丁汉森林（英超）</h4>
+      <span class="m-time">10-24 03:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">1.80 / 3.90 / 3.15</dd></div>
-        <div><dt>让球盘 −1</dt><dd class="mono">3.20 / 3.82 / 1.80</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 0.83/0.94 → 半球 0.94/0.91</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">32 / 18 / 50</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.48/3.55/2.65 → 2.01/3.84/3.23</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">49.2 / 22.7 / 28.1</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">49.2 / 22.7 / 28.1</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 10.2% · 2:1 9.4% · 1:0 7.5% · 2:0 7.0% · 1:2 6.9%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">62.0%<span class="bar"><i style="width:62%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">2.80 / 3.25 / 2.17</dd></div>
+        <div><dt>让球盘 +1</dt><dd class="mono">1.52 / 3.90 / 4.70</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">平手 1.09/0.86 → 受平/半 0.90/0.94</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">29 / 19 / 52</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">2.78/3.33/2.47 → 3.10/3.46/2.23</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">31.7 / 27.3 / 41.0</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">31.6 / 27.2 / 41.2</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:1 12.8% · 0:1 11.5% · 1:0 9.8% · 0:0 8.7% · 1:2 8.5%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">44.1%<span class="bar low2"><i style="width:44.1%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：里昂 2 档，霍芬海姆 3-4 档。霍村多年无欧战（排名 200 开外），里昂 31。</dd></div>
-        <div><dt>排名差</dt><dd>差约 170 名，按排名里昂客场也该让 0.75-1 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘平手，目前升到主让半球——不但没让里昂让球，主队反而升盘！市场看的是霍村联赛阶段状态和里昂客场，排名角度完全背离，不合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘从平手退到主受让平/半（诺丁汉客让 0.25）；欧均主胜 2.78→3.10 大幅升高、客胜 2.47→2.23 压低——盘口赔率一致倒向客队。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">霍芬海姆近 8 场 6 负、场场丢 2-3 球防线崩盘，还伤了半支队：德卡特半月板重伤长期缺阵、恩格尔斯停赛；里昂法甲登顶、欧联两连胜，仅哈姆达尼停赛。但邪门的是两队历史交锋 3 次全平（2:2/2:2/3:3）！近况完全倒向里昂，客不败是基本面方向，平局要防</p>
-      <p class="detail">和 006 一样不能套排名。注意一个背离信号：<b>支持率 50% 在客胜，盘口却升主让</b>。竞彩 <b>−1 = 主让 1 球，比亚盘深一档</b>：让球负 1.80（里昂不输 2 球）模型覆盖约 60%，<b>里昂 + 让球负是排名与资金支持的双重方向</b>。</p>
+      <p class="pt">本场两队近况与交锋数据缺失（数据源页面未有效返回）。盘面：亚盘从平手退到主受让平/半，欧均主胜大幅升高、客胜明显压低，支持率 52% 在客胜——伊普斯维奇主场被一致看衰，诺丁汉森林客场走强</p>
+      <p class="detail">竞彩 <b>+1 = 客让 1 球，比亚盘（客让 0.25）深两档</b>：让球胜 1.52（主队不败）模型覆盖 58.8% 过半；<b>森林净胜 2 球以上仅 18.8%，让球负 4.70 可排除；大 2.5 球仅 44.1% 偏小，让球平 3.90（主队恰好输 1 球）22.4% 可防</b>。</p>
     </div>
   </article>
 
@@ -717,77 +668,107 @@ footer .sources a{word-break:break-all}
   <article class="match">
     <div class="m-head">
       <span class="m-no">010</span>
-      <h4 class="m-title">利勒斯特(无) vs 皇家社会(43)</h4>
-      <span class="tag t-watch">客队盘口偏浅</span>
-      <span class="m-time">10-23 03:00</span>
+      <h4 class="m-title">博尔顿 vs 米德尔斯堡（英冠）</h4>
+      <span class="m-time">10-24 03:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">5.20 / 4.30 / 1.42</dd></div>
-        <div><dt>让球盘 +1</dt><dd class="mono">2.45 / 3.50 / 2.30</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">受一球 0.84/0.92 → 受一球 0.97/0.86</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">7 / 6 / 87</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">5.40/4.40/1.59 → 5.68/4.50/1.50</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">17.0 / 20.6 / 62.4</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">17.1 / 20.6 / 62.3</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">0:2 10.3% · 0:1 10.0% · 1:2 9.9% · 1:1 9.7% · 0:3 7.0%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">58.1%<span class="bar"><i style="width:58.1%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">4.95 / 4.30 / 1.44</dd></div>
+        <div><dt>让球盘 +1</dt><dd class="mono">2.40 / 3.72 / 2.25</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">受半/一 0.98/0.73 → 受一球 0.92/0.89</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">9 / 8 / 83</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">3.75/3.70/1.91 → 4.99/4.35/1.55</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">17.9 / 20.6 / 61.5</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">18.0 / 20.7 / 61.3</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:2 9.9% · 0:2 9.8% · 1:1 9.7% · 0:1 9.5% · 1:3 6.8%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">59.4%<span class="bar"><i style="width:59.4%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>欧罗巴分档：皇家社会 2 档，利勒斯特 4 档。利勒斯特挪超队（上赛季还在挪甲），无欧战积分（排名 250 开外）。</dd></div>
-        <div><dt>排名差</dt><dd>250+ vs 43，差 200 名以上，客场作战合理挡位在 1.75-2 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘受一球（客让 1），目前维持一球（主水从 0.84 升到 0.97，客队方向还在走强）。盘口不升，太少了，不合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>亚盘从受半/一升到受一球（米德尔斯堡客让加深）；欧均客胜 1.91→1.55 大幅压低——本期变动最剧烈的一场，客队持续走强。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">本场两队近况数据不足（数据源页面无有效更新），已知：欧联前两轮两队都只有 1 分（利勒斯特第 22、皇社第 23），皇社 9 月还在主场 1:2 输过伯恩茅斯。客场让一球始终不升，市场对皇社客场信心一般，本场以盘面数据为主，别重仓</p>
-      <p class="detail">竞彩 <b>+1 = 皇家社会让 1 球，与亚盘一致</b>：让球负 2.30（主队输 2 球以上）模型给约 38%，让球胜 2.45（主队不败）仅约 26%——<b>排名差 + 支持率 + 水位全部指向客队，让球负 2.30 是本场核心方向</b>。</p>
+      <p class="pt">本场两队近况与交锋数据缺失（数据源页面未有效返回）。盘面变动本期最剧烈：欧均客胜 1.91→1.55 大幅压低，亚盘从受半/一升到受一球，支持率 83% 压客胜——米德尔斯堡客场被一致看好且持续走强，博尔顿主场毫无支撑</p>
+      <p class="detail">竞彩 <b>+1 = 客让 1 球，与即时亚盘一球对齐</b>：让球平 3.72（博尔顿恰好输 1 球）23.6%、让球负 2.25（输 2 球以上）37.8%——客队净胜 2 球概率不低，<b>让球负 2.25 有价值；大 2.5 球 59.4% 偏高，1:2 / 0:2 合计 19.7%，客胜 1.44 与让球负可组合参考</b>。</p>
     </div>
   </article>
 
-  <!-- 013 -->
+  <!-- 011 -->
   <article class="match">
     <div class="m-head">
-      <span class="m-no">013</span>
-      <h4 class="m-title">弗拉门戈(解放者杯1) vs 拉普大学(解放者杯2)</h4>
-      <span class="tag t-ok">合理</span>
-      <span class="m-time">10-23 08:30</span>
+      <span class="m-no">011</span>
+      <h4 class="m-title">阿拉维斯 vs 马拉加（西甲）</h4>
+      <span class="m-time">10-24 03:00</span>
     </div>
 
     <div class="m-sec">
       <div class="m-sec-t">赔率与概率</div>
       <dl class="m-grid">
-        <div><dt>胜平负</dt><dd class="mono">1.26 / 4.28 / 9.75</dd></div>
-        <div><dt>让球盘 −1</dt><dd class="mono">2.05 / 3.13 / 3.10</dd></div>
-        <div><dt>亚洲盘 初→即</dt><dd class="mono">一/球半 1.06/0.76 → 一/球半 0.94/0.88</dd></div>
-        <div><dt>支持率（胜/平/负）</dt><dd class="mono">74 / 14 / 12</dd></div>
-        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.49/3.90/7.00 → 1.37/4.34/8.50</dd></div>
-        <div><dt>隐含概率（去水）</dt><dd class="mono">70.2 / 20.7 / 9.1</dd></div>
-        <div><dt>泊松模型概率</dt><dd class="mono">70.2 / 20.7 / 9.1</dd></div>
-        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:0 17.9% · 2:0 16.5% · 3:0 10.1% · 0:0 9.7% · 1:1 8.8%</dd></div>
-        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">41.2%<span class="bar low"><i style="width:41.2%"></i></span></dd></div>
+        <div><dt>胜平负</dt><dd class="mono">1.60 / 3.45 / 4.68</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">3.05 / 3.25 / 2.03</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">球半 2.13/0.44 → 半/一 0.95/0.91</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">84 / 10 / 6</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.71/3.65/4.80 → 1.75/3.57/4.74</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">55.4 / 25.7 / 18.9</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">55.4 / 25.7 / 18.9</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:0 15.1% · 1:1 11.8% · 2:0 11.7% · 0:0 9.8% · 2:1 9.1%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">40.9%<span class="bar low"><i style="width:40.9%"></i></span></dd></div>
       </dl>
     </div>
 
     <div class="m-sec">
-      <div class="m-sec-t">挡位分析</div>
+      <div class="m-sec-t">盘口走势</div>
       <dl class="m-list">
-        <div><dt>分档</dt><dd>南美球队无 UEFA 排名，按解放者杯排名 1 vs 2，同档强队对话（淘汰赛场次）。</dd></div>
-        <div><dt>排名差</dt><dd>同档对话，主场作战合理挡位是 0.75-1 球。</dd></div>
-        <div><dt>盘口走势</dt><dd>实际初盘一/球半（1.25），目前维持，主水从 1.06 降到 0.94。高开了 2 档，但弗拉门戈主场是出了名的硬，暂时看是合理的！</dd></div>
+        <div><dt>走势解读</dt><dd>平均初盘球半退到半/一（0.95/0.91），部分公司甚至退到半球；欧均主胜 1.71→1.75 微升——深盘退盘，市场对阿拉维斯大胜的预期明显降温。</dd></div>
       </dl>
     </div>
 
     <div class="m-concl">
-      <p class="pt">解放者杯半决赛次回合，首回合拉普主场 0:0 闷平。弗拉门戈巴甲第 1（67 分）、各项 8 场不败（5 胜 3 平），马拉卡纳主场加持；拉普大学近 6 场只赢 1 场、阿甲客场连败。两队近 5 次交手 4 场总进球 ≤ 2，典型淘汰赛小球局——弗拉门戈赢面大，但小胜 1 球赢球输盘的剧本要防</p>
-      <p class="detail">大 2.5 球仅 41.2%（本期最低），淘汰赛小格局。竞彩 <b>−1 = 主让 1 球，比亚盘浅一档</b>：让球胜 2.05 需净胜 2 球（模型约 36%，2:0 一个比分就占 16.5%），<b>让球胜 2.05 与让球平 3.13 都值得考虑，主胜 1.26 无价值</b>。</p>
+      <p class="pt">本场两队近况与交锋数据缺失（数据源页面未有效返回）。盘面明显退盘：平均初盘球半退到半/一，部分公司退半球，欧均主胜微升——市场对阿拉维斯大胜预期降温，但支持率 84% 仍压在主胜，热度与盘口走向背离</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，与退盘后亚盘基本一致</b>：让球胜 3.05 需净胜 2 球（模型 29.1%）；<b>大 2.5 球仅 40.9% 本期最低，1:0 单比分 15.1% 一枝独秀——典型小胜格局，让球平 3.25（恰好赢 1 球）26.2% 概率赔率比最优</b>，让球负 2.03 覆盖 44.6% 更稳。</p>
+    </div>
+  </article>
+
+  <!-- 012 -->
+  <article class="match">
+    <div class="m-head">
+      <span class="m-no">012</span>
+      <h4 class="m-title">吉马良斯 vs 马里迪莫（葡超）</h4>
+      <span class="m-time">10-24 03:45</span>
+    </div>
+
+    <div class="m-sec">
+      <div class="m-sec-t">赔率与概率</div>
+      <dl class="m-grid">
+        <div><dt>胜平负</dt><dd class="mono">1.52 / 3.60 / 5.15</dd></div>
+        <div><dt>让球盘 −1</dt><dd class="mono">2.80 / 3.25 / 2.16</dd></div>
+        <div><dt>亚洲盘 初→即</dt><dd class="mono">球半 1.96/0.44 → 半/一 0.84/0.99</dd></div>
+        <div><dt>支持率（胜/平/负）</dt><dd class="mono">78 / 9 / 13</dd></div>
+        <div class="wide"><dt>欧均 初→即</dt><dd class="mono">1.65/3.55/4.90 → 1.62/3.75/5.19</dd></div>
+        <div><dt>隐含概率（去水）</dt><dd class="mono">58.2 / 24.6 / 17.2</dd></div>
+        <div><dt>泊松模型概率</dt><dd class="mono">58.4 / 24.4 / 17.2</dd></div>
+        <div class="wide"><dt>最可能比分</dt><dd class="mono">1:0 14.9% · 2:0 12.2% · 1:1 11.3% · 2:1 9.3% · 0:0 9.1%</dd></div>
+        <div class="wide last-row"><dt>大 2.5 球</dt><dd class="mono">43.0%<span class="bar low2"><i style="width:43%"></i></span></dd></div>
+      </dl>
+    </div>
+
+    <div class="m-sec">
+      <div class="m-sec-t">盘口走势</div>
+      <dl class="m-list">
+        <div><dt>走势解读</dt><dd>平均初盘球半退到半/一（0.84/0.99），多数公司从一球退半/一；但欧均主胜 1.65→1.62 反而压低——亚盘退盘、欧赔走强，方向矛盾。</dd></div>
+      </dl>
+    </div>
+
+    <div class="m-concl">
+      <p class="pt">葡超第 9 轮，排名与盘口倒挂：吉马良斯上季第 9、本季仅 1 胜 2 平 5 负 5 分排第 15，还落后升班马马里迪莫（上季葡甲冠军，2 胜 2 平 4 负 8 分排 12）3 分；盘口仍开主让半/一，靠的是交锋底气——近 5 次交手吉马良斯 4 胜 1 平不败。吉马良斯周中葡杯小胜晋级、联赛刚 0:2 负本菲卡；马里迪莫葡杯 2:1 晋级、联赛 1:2 负波尔图</p>
+      <p class="detail">竞彩 <b>−1 = 主让 1 球，与退盘后亚盘基本一致</b>：退盘 + 主队近况低迷，让球胜 2.80（需净胜 2 球，模型 32.1%，2:0 占 12.2%）偏险；<b>大 2.5 球仅 43.0%，1:0 + 2:0 合计 27.1%——主队小胜是主线，让球负 2.16（马里迪莫不输 2 球）覆盖 41.6% 更稳</b>。</p>
     </div>
   </article>
 
@@ -795,22 +776,22 @@ footer .sources a{word-break:break-all}
 
   <div class="keystats">
     <div class="kcard">
-      <h4>盘口贴合度</h4>
+      <h4>亚盘走势</h4>
       <ul>
-        <li><b>5 场合理</b>：001（升盘到位）、002（客队持续走强）、004（一球标准盘）、008（主场小幅升盘）、013（主场龙高开 2 档可接受）。</li>
-        <li><b>4 场偏浅</b>：003（差 150 名只让 0.75→1）、005（差 300 名只让 1.5→2）、007（主队高 46 名却受让开）、010（差 200 名只让 1）。</li>
-        <li><b>2 场与排名背离</b>：006 / 009，市场完全按联赛阶段状态与主场定价，欧战排名不管用。</li>
-        <li><b>竞彩让球 vs 亚盘</b>：001/006/008/009 竞彩让球比亚盘深一档；003/004/005/010 基本对齐；013 竞彩比亚盘浅一档。</li>
+        <li><b>升盘 3 场</b>（全是平手 → 主让平/半）：001 布里斯班、003 埃夫斯堡、008 布雷斯特——主队方向小幅走强。</li>
+        <li><b>走弱 5 场</b>：002 波鸿、009 伊普斯维奇（平手退到主受让平/半）；010 博尔顿（受半/一 → 受一球，客队让球加深）；011 阿拉维斯、012 吉马良斯（球半退半/一）——退盘集中在深盘场次。</li>
+        <li><b>维持 4 场</b>：004 一球、005 平/半、006 球半、007 平/半。</li>
+        <li><b>亚盘与欧赔分歧</b>：008（亚盘升盘、欧均主胜反升）、012（亚盘退盘、欧均主胜反降）——分歧场次谨慎。</li>
       </ul>
     </div>
     <div class="kcard">
       <h4>赔率与进球信号</h4>
       <ul>
-        <li><b>升盘场次</b>：001（平手→受半球）、003（半/一→一球）、005（受球半→受两球）、006（平/半→半球）、008（平手→平/半）、009（平手→半球）——6 场升盘，本期市场调整很活跃。</li>
-        <li><b>降盘/退盘</b>：007（受平/半→平手）是唯一退盘，主队方向走弱。</li>
-        <li><b>进球期望最高</b>：005 OFI克里特 vs 勒沃库森 <em>3.55</em>，009 霍芬海姆 vs 里昂 <em>3.20</em>。</li>
-        <li><b>进球期望最低</b>：013 弗拉门戈 vs 拉普大学 <em>2.33</em>，007 凯尔特人 vs 塞尔塔 <em>2.47</em>。</li>
-        <li><b>支持率最集中</b>：004 尤文 87%、010 皇家社会 87%、002 桑德兰 82%。</li>
+        <li><b>支持率最集中</b>：006 主胜 89%、011 主胜 84%、010 客胜 83%、012 主胜 78%、004 主胜 77%。</li>
+        <li><b>欧赔变动最剧烈</b>：010 客胜 1.91→1.55；002 客胜 2.29→2.08；009 主胜 2.78→3.10。</li>
+        <li><b>进球期望最高</b>：006 斯图加特 vs 门兴 <em>3.66</em>、010 博尔顿 vs 米堡 <em>3.08</em>、004 前进之鹰 vs 特尔斯达 <em>3.02</em>；最低：011 阿拉维斯 <em>2.32</em>、001 布里斯班 <em>2.36</em>、012 吉马良斯 <em>2.40</em>。</li>
+        <li><b>大 2.5 球最高</b>：006 <em>70.7%</em>、010 <em>59.4%</em>；最低：011 <em>40.9%</em>、001 <em>42.0%</em>、012 <em>43.0%</em>。</li>
+        <li><b>竞彩让球 vs 亚盘</b>：001/002/003/005/007/008/009 竞彩让球比亚盘深两档；004/010 对齐；011/012 基本一致；006 竞彩比亚盘浅一档。</li>
       </ul>
     </div>
   </div>
@@ -823,24 +804,20 @@ footer .sources a{word-break:break-all}
     <h2>数据来源与口径</h2>
     <ol>
       <li id="cite-1">
-        <span class="src-title">中国竞彩网（lottery.gov.cn）· 足球胜平负 / 让球胜平负计算器。周四 2026-10-22 共 11 场，奖金更新时间 2026-10-21 21:49:50，提供胜平负、让球胜平负赔率与支持率。</span>
+        <span class="src-title">中国竞彩网（lottery.gov.cn）· 足球胜平负 / 让球胜平负计算器。周五 2026-10-23 共 12 场，赔率与支持率采集于 2026-10-22，提供胜平负、让球胜平负赔率与支持率。</span>
         <a class="src-url" href="https://www.lottery.gov.cn/jc/jsq/zqspf/" target="_blank" rel="noopener">https://www.lottery.gov.cn/jc/jsq/zqspf/</a>
       </li>
       <li id="cite-2">
-        <span class="src-title">足彩网（zgzcw.com）· 赔率中心百家欧赔与亚盘对比（99 家平均）。提供欧洲平均赔率初盘/即时与各场亚盘初盘/即时盘走势；002 场亚盘页面未渲染，用欧赔走势换算标注。</span>
+        <span class="src-title">足彩网（zgzcw.com）· 赔率中心百家欧赔与亚盘对比（99 家平均）。提供欧洲平均赔率初盘/即时与各场亚盘初盘/即时盘走势。</span>
         <a class="src-url" href="https://plzx.zgzcw.com/bjzs" target="_blank" rel="noopener">https://plzx.zgzcw.com/bjzs</a>
       </li>
       <li id="cite-3">
-        <span class="src-title">UEFA 5 年俱乐部排名（kassiesa.net，2026/27 赛季口径）。用于排名差挡位换算：拜仁1、皇马2、巴黎3、勒沃库森9、尤文25、AC米兰30、里昂31、皇家社会43、马赛48、萨迪纳摩56、凯尔特人58、雷恩66、格风暴79、波兹南81、塞尔塔104、贝西克塔123。</span>
-        <a class="src-url" href="https://kassiesa.net/uefa/data/method5/trank2026.html" target="_blank" rel="noopener">https://kassiesa.net/uefa/data/method5/trank2026.html</a>
-      </li>
-      <li id="cite-4">
-        <span class="src-title">计算口径说明。隐含概率 = (1/赔率) ÷ Σ(1/赔率)；泊松模型以 λ主、λ客 拟合去水后的胜平负概率，比分矩阵按 P(i,j)=P(i;λ主)×P(j;λ客) 计算，最大进球数取 9。005 场胜平负未开售，隐含概率改用欧洲平均赔率计算。</span>
+        <span class="src-title">计算口径说明。隐含概率 = (1/赔率) ÷ Σ(1/赔率)；泊松模型以 λ主、λ客 拟合去水后的胜平负概率，比分矩阵按 P(i,j)=P(i;λ主)×P(j;λ客) 计算，最大进球数取 9。</span>
         <span class="src-url">本页自算</span>
       </li>
-      <li id="cite-5">
-        <span class="src-title">近况与伤停信息。双方近 8 场战绩与交锋记录来自足彩网「比分预测」频道；伤停名单综合 FotMob、Transfermarkt、懂球帝、The Hard Tackle、Sportradar 等 2026-10-22 前后公开报道，未查到可靠来源的场次不作伤停判断（010 场近况数据缺失已标注）。</span>
-        <a class="src-url" href="https://fenxi.zgzcw.com/4630665/bfyc" target="_blank" rel="noopener">https://fenxi.zgzcw.com/4630665/bfyc</a>
+      <li id="cite-4">
+        <span class="src-title">排名、近况与交锋信息。来自足彩网「比分预测」频道（fenxi.zgzcw.com）：001 / 012 两场含完整赛季战绩与交锋记录；003 / 005 / 007 / 008 含联赛排名与积分；002 / 004 / 006 / 009 / 010 五场页面未返回有效数据，已在要点栏标注「数据缺失」。</span>
+        <a class="src-url" href="https://fenxi.zgzcw.com/4590408/bfyc" target="_blank" rel="noopener">https://fenxi.zgzcw.com/4590408/bfyc</a>
       </li>
     </ol>
     <p style="margin-top:14px">本页仅作赔率与盘口的数据整理与方法演示，不构成任何投注建议。请理性看待、量力而行。</p>
